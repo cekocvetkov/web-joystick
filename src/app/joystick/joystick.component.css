@@ -1,0 +1,25 @@
+.joystick-wrapper {
+    display: flex;
+}
+.joystick-circle {
+    /* border: 1px solid black; */
+    background-color: rgb(243, 171, 171);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.joystick-circle-controller {
+    /* border: 1px solid black; */
+    background-color: rgb(196, 91, 91);
+    
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+}
+.joystick-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}

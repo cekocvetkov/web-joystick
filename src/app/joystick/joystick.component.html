@@ -1,0 +1,32 @@
+<div class="joystick-values">
+  <div>
+    x: {{ currCircleOrigin.x | number: "1.2-2" }} y:
+    {{ currCircleOrigin.y | number: "1.2-2" }}
+  </div>
+  <div>Angle: {{ angleInDegrees }}°</div>
+  <div>Current Speed: {{ speed | number: "1.2-2" }}</div>
+  <ngx-slider
+    [(value)]="speedSliderValue"
+    [options]="speedSliderOptions"
+  ></ngx-slider>
+</div>
+<!-- <div #center class="center"></div> -->
+<div class="joystick-wrapper">
+  <div
+    #outerCircle
+    id="outerCircle"
+    class="joystick-circle"
+    [style.width.px]="diameter"
+    [style.height.px]="diameter"
+  >
+    <div
+      #innerCircle
+      id="innerCircle"
+      class="joystick-circle-controller"
+      (mousedown)="onMouseDown($event)"
+      (touchstart)="onTouchStart($event)"
+      [style.width.px]="innerDiameter"
+      [style.height.px]="innerDiameter"
+    ></div>
+  </div>
+</div>

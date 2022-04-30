@@ -1,0 +1,12 @@
+.main-area {
+    display:flex;
+    justify-content: center;
+}
+
+.joystick-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height:500px;
+}
