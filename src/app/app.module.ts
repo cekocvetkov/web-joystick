@@ -1,13 +1,13 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { JoystickComponent } from './joystick/joystick.component';
-import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { WebJoystickComponent } from './web-joystick/web-joystick.component';
 
 @NgModule({
-  declarations: [AppComponent, JoystickComponent],
+  declarations: [AppComponent, WebJoystickComponent],
   imports: [BrowserModule, AppRoutingModule, NgxSliderModule],
   providers: [],
   bootstrap: [AppComponent],
